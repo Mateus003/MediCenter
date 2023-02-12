@@ -5,12 +5,12 @@ body{
 
 *{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     height: 120px;
 }
 
@@ -19,9 +19,6 @@ header{
     justify-content: space-between;
     width: 990px;
 }
-
-
-
 
 .logo{
     display: flex;
@@ -46,7 +43,6 @@ header{
     padding: 14px;
     color: #727272;
     border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav a.active ,
@@ -55,3 +51,91 @@ nav a:hover{
     color: white;
 }
 
+#banner{
+    display: flex;
+    background-image: url('../image/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+.banner_headline{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.banner_headline h1{
+    color: #ffffff;
+    font-size: 4.0625em;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.banner_headline h2{
+    font-size: 1.3125em;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_options{
+    display: flex;
+    height: 210px;
+    color: #ffffff;
+}
+
+.banner1, .banner2, .banner3{
+    flex: 1;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.banner1{
+    background-color: #39aae1;
+}
+
+.banner2{
+    background-color: #0079c7
+}
+
+.banner3{
+    background-color: #2b4cc9;
+}
+
+.banner_title{
+    font-size:  1.3125em;
+}
+
+.banner_desc{
+    margin: 20px 0 20px 0;
+    font-size: 0.90em;
+}
+
+.banner_options a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.90em;
+}
+
+.banner_day_and_hours{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff41;
+    margin-top: 20px;
+    font-size: 0.90em;
+}
