@@ -17,6 +17,7 @@ header{
 .container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 990px;
 }
 
@@ -186,18 +187,16 @@ nav a:hover{
     font-size: 0.90em;
 }
 
-.phone{
+.phone, .form{
     border-top: 2px solid #929292;
     padding-top:15px;
     padding-bottom: 15px;
     border-bottom: 2px solid #929292;
 }
 
-.form{
+.instagram{
     border-top: 2px solid #929292;
     padding-top:15px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #929292;
 }
 
 .container_article{
@@ -256,3 +255,101 @@ article .news_resume{
     margin-bottom: 30px;
 }
 
+footer{
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.footer_menu{
+    display: flex;
+}
+.fm_1,.fm_2,.fm_3{
+    flex: 1;
+    padding: 20px;
+}
+
+.fm_1{
+    background-color: #39aae1;
+}
+
+.fm_2{
+    background-color: #0079c7
+}
+
+.fm_3{
+    background-color: #2b4cc9;
+}
+
+.footer_menu a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_menu p{
+    text-decoration: underline;
+    font-size: 0.75em;
+}
+
+.footer_area{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.footer_areaitem{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer_areaitem_title{
+    display: flex;
+}
+
+.footer_areaitem_title .footer_title{
+    font-size: 1.25em;
+}
+
+.border_title{
+    width: 45px;
+    height: 2px;
+    background-color:  #39aae1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.footer_areaitem_desc{
+    font-size: 0.75em;
+
+}
+
+.footer_areaitem_desc .footer_year{
+    margin-top: 4px;
+    color: #2b4cc9;
+    margin-bottom: 22px;
+}
+
+.footer_location_contact{
+    color: #929292;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer_copy{
+    color: #929292;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-top: 1px solid #929292;
+    margin-top:50px;
+    font-size: 0.8em;
+}
