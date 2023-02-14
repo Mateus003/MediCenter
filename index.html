@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=0"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>MediCenter</title>
 </head>
@@ -17,6 +17,12 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+
+                    </div>
                     <ul>
                         <li><a href="" class="active">Home</a></li>
                         <li><a href="">Blog</a></li>
@@ -276,5 +282,15 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener('click')
+            if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display = 'none';
+            }else{
+                document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        }
+    </script>
 </body>
 </html>
